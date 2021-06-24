@@ -14,7 +14,7 @@ const SequelizeProvider = require('./Database/providers/sequelize');
 // Create the CommandoClient in place of the generic Client
 const client = new CommandoClient({
 	owner: '279744002599682048',
-    //invite: 'https://discord.gg/5zDNffy',
+  invite: 'https://discord.gg/5zDNffy',
     //unknownCommandResponse: false, // leave this commented; I don't think snodebot will ever need this
 });
 
