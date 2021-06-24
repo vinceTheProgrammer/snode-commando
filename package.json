@@ -1,0 +1,35 @@
+{
+  "name": "snodebot",
+  "version": "1.0.0",
+  "description": "A Discord bot that interacts with the Stick Nodes website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinceTheProgrammer/snodebot.git"
+  },
+  "keywords": [
+    "Stick",
+    "Nodes",
+    "Webscraper",
+    "Discord",
+    "bot"
+  ],
+  "author": "vinceTheProgrammer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinceTheProgrammer/snodebot/issues"
+  },
+  "homepage": "https://github.com/vinceTheProgrammer/snodebot#readme",
+  "dependencies": {
+    "common-tags": "^1.8.0",
+    "discord.js": "^12.3.1",
+    "discord.js-commando": "github:discordjs/Commando",
+    "dotenv": "^8.2.0",
+    "pg": "^8.3.3",
+    "sequelize": "^6.3.5",
+    "winston": "^3.3.3"
+  }
+}

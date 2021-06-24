@@ -1,0 +1,40 @@
+const { Command } = require('discord.js-commando');
+
+module.exports = class MeowCommand extends Command {
+	constructor(client) {
+		super(client, {
+			name: 'meow',
+			group: 'first',
+			memberName: 'meow',
+            description: 'Replies with a meow, kitty cat.',
+            throttling: {
+                usages: 2,
+                duration: 10,
+            },
+            guildOnly: true,
+            clientPermissions: ['ADMINISTRATOR'],
+            userPermissions: ['MANAGE_MESSAGES'],
+            ownerOnly: true,
+            args: [
+                {
+                    key: 'text', // the name of the argument. When you define it in your run method, this is what you'll be using.
+                    prompt: 'What text would you like the bot to say?', // the text that displays if no argument is provided. If someone uses just ?say, that prompt will come up asking for the text.
+                    type: 'string', // the type the argument is a part of. This can be many things, including string, integer, user, member, etc.
+                },
+                {
+                    key: 'otherThing',
+                    prompt: 'What is this other useless thing?',
+                    type: 'string',
+                    default: 'dog',
+                    validate: text => text.length < 201, // validates the argument
+                    oneOf: ['yes', 'no'], // validates from set amount of options
+                    // is automatically case-insensitive
+                },
+            ],
+		});
+	}
+
+	run(message, { text, otherThing }) {
+		return message.say(text + " " + otherThing + ": " + this.client.guilds.cache.size); // use "this." when using client values
+	}
+};
