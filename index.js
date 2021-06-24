@@ -27,6 +27,7 @@ client.registry
 	.registerGroups([
 		['sn', 'Stick Nodes Commands'],
     ['fun', 'Fun Commands'],
+    ['util', 'Utility Commands'],
     ['mod', 'Moderator Commands'],
     ['dev', 'Developer Commands']
 	])

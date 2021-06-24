@@ -1,6 +1,6 @@
 {
-  "name": "snodebot",
-  "version": "1.0.0",
+  "name": "snode",
+  "version": "0.0.4",
   "description": "A Discord bot that interacts with the Stick Nodes website.",
   "main": "index.js",
   "scripts": {
@@ -8,21 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vinceTheProgrammer/snodebot.git"
+    "url": "git+https://github.com/vinceTheProgrammer/snode.git"
   },
   "keywords": [
-    "Stick",
-    "Nodes",
-    "Webscraper",
+    "Stick Nodes",
+    "nodes",
+    "webscraper",
     "Discord",
     "bot"
   ],
   "author": "vinceTheProgrammer",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vinceTheProgrammer/snodebot/issues"
+    "url": "https://github.com/vinceTheProgrammer/snode/issues"
   },
-  "homepage": "https://github.com/vinceTheProgrammer/snodebot#readme",
+  "homepage": "https://github.com/vinceTheProgrammer/snode#readme",
   "dependencies": {
     "common-tags": "^1.8.0",
     "discord.js": "^12.3.1",
